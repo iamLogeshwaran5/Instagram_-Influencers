@@ -6,6 +6,13 @@ This repository contains a data analysis project that explores Instagram influen
 
 Instagram, a major social networking platform, is a potent tool for digital marketing and personal branding. This project aims to analyze the reach and effectiveness of top influencers on Instagram to understand how they engage their audience and what makes their content successful.
 
+## Dataset
+
+The dataset used for this analysis is included in this repository and can be directly accessed [here](https://drive.google.com/drive/folders/1KEBUD0a_3DhR5dnbv0jdZqews-V75CIx).
+
+Click the link to view and download the data used in this project.
+
+
 ## Features
 
 The dataset includes the following fields:
@@ -42,7 +49,7 @@ Correlation between various metrics.
 - Results include various visualizations and insights derived from the data, which are saved in the output folder.
 
 ## Contact
- "Logeshwaran C"
+ Logeshwaran C
  logeshwaran1478@gmail.com
 
 
