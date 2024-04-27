@@ -1,4 +1,7 @@
-# Instagram Influencers Analysis
+<img src="https://img.icons8.com/fluency/344/instagram-new.png" alt="Instagram Logo" width="50" height="50" style="vertical-align:right">
+
+## Instagram Influencers Analysis
+
 
 This repository contains a data analysis project that explores Instagram influencers' impact and characteristics. The analysis is based on a dataset that includes various metrics such as influence scores, follower counts, average likes, and more.
 
