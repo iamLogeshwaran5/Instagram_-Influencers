@@ -1,16 +1,50 @@
 import streamlit as st
-import matplotlib.ticker as mtick
-import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
+import pandas as pd
 
-# Load the cleaned dataset (make sure to use the correct path where your cleaned data is stored)
+# Load the cleaned dataset
 @st.cache
 def load_data():
     data = pd.read_csv('C:/Users/wolfr/OneDrive/Desktop/Logeshwaran_WorkSpace/Instagram_Influencer/Cleaned_Influencer_Data.csv')
     return data
 
 data = load_data()
+
+# Add Instagram logo icon
+st.image("https://th.bing.com/th/id/OIP.mdNMeNAxQL1gWv0U3KAe1gHaHZ?rs=1&pid=ImgDetMain", width=100)  
+
+# Define the title of the app
+title = "Instagram Influence Data Analysis Insight"
+
+# Display the title at the top of the page
+st.title(title)
+
+# Add creator information
+st.markdown("Created by **Logeshwaran**")
+st.markdown("[logeshwaran1478@gmail.com](mailto:logeshwaran1478@gmail.com)")
+
+# Add LinkedIn link icon button
+st.markdown("[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/your_link_here)")
+
+# Add professional background with multicolor gradient effect
+st.markdown(
+    """
+    <style>
+    .background {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background: linear-gradient(135deg, #FF5733, #FFC300, #DAF7A6, #C70039);
+    }
+    </style>
+    <div class="background"></div>
+    """,
+    unsafe_allow_html=True
+)
 
 # Displaying the correlation matrix
 st.header("Correlation Matrix")
@@ -61,4 +95,3 @@ for x, y in pairs:
     sns.scatterplot(x=x, y=y, data=data)
     plt.title(f'Relationship between {x} and {y}')
     st.pyplot(fig)
-
